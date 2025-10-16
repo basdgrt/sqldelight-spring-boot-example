@@ -1,1 +1,10 @@
 services:
+  postgres-sqldelight-demo:
+    image: postgres:18-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_DB: postgres
+      POSTGRES_PASSWORD: secret
+    ports:
+      - "5432:5432"
