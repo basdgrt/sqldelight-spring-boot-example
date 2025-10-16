@@ -8,7 +8,7 @@ FROM formulaOneDriver
 WHERE driver_number = ?;
 
 insert:
-INSERT INTO formulaOneDriver(driver_number, full_name)
+INSERT INTO formulaOneDriver(driver_number, full_name, constructor)
 VALUES ?;
 
 deleteAll:

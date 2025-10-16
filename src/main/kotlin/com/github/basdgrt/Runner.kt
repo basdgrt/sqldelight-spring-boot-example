@@ -25,9 +25,9 @@ class Runner(
 
     private fun insertDrivers() {
         listOf(
-            FormulaOneDriver(1, "Max Verstappen"),
-            FormulaOneDriver(81, "Oscar Piastri"),
-            FormulaOneDriver(16, "Charles Leclerc")
+            FormulaOneDriver(1, "Max Verstappen", "Red Bull"),
+            FormulaOneDriver(81, "Oscar Piastri", "McLaren"),
+            FormulaOneDriver(16, "Charles Leclerc", "Ferrari")
         ).forEach { driver ->
             println("Inserting: $driver")
             repository.insert(driver)
