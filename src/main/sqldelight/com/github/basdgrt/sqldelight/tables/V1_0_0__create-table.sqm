@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS formulaOneDriver (
+  driver_number INTEGER PRIMARY KEY NOT NULL,
+  full_name TEXT NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS formulaOneDriver_full_name ON formulaOneDriver(full_name);

@@ -1,0 +1,15 @@
+findAll:
+SELECT *
+FROM formulaOneDriver;
+
+findByDriverNumber:
+SELECT *
+FROM formulaOneDriver
+WHERE driver_number = ?;
+
+insert:
+INSERT INTO formulaOneDriver(driver_number, full_name)
+VALUES ?;
+
+deleteAll:
+DELETE FROM formulaOneDriver;
