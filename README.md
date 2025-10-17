@@ -21,7 +21,7 @@ Finding driver with driver number 81
 Found driver: Oscar Piastri
 ```
 
-### SqlDelight
+## SqlDelight
 - Migrations are located under: `src/main/sqldelight/.../tables/*.sqm`.
 - Queries are located under: `src/main/sqldelight/.../queries/*.sq`
 - Generated code package: `com.github.basdgrt.sqldelight` with database name `PostgresDatabase` (see `build.gradle.kts`).
