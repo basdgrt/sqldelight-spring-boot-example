@@ -6,7 +6,7 @@ import org.springframework.boot.ApplicationRunner
 import org.springframework.stereotype.Component
 
 @Component
-class Runner(
+class ApplicationRunner(
     private val repository: FormulaOneDriverRepository
 ): ApplicationRunner {
 
