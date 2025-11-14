@@ -1,9 +1,9 @@
 plugins {
-	kotlin("jvm") version "2.2.20"
-	kotlin("plugin.spring") version "2.2.20"
-	id("org.springframework.boot") version "3.5.6"
+	kotlin("jvm") version "2.2.21"
+	kotlin("plugin.spring") version "2.2.21"
+	id("org.springframework.boot") version "3.5.7"
 	id("io.spring.dependency-management") version "1.1.7"
-	id("app.cash.sqldelight") version "2.1.0"
+	id("app.cash.sqldelight") version "2.2.1"
 }
 
 group = "com.github.basdgrt"
@@ -23,7 +23,7 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	implementation("app.cash.sqldelight:jdbc-driver:2.1.0")
+	implementation("app.cash.sqldelight:jdbc-driver:2.2.1")
 
 	runtimeOnly("org.postgresql:postgresql")
 	developmentOnly("org.springframework.boot:spring-boot-docker-compose")
@@ -56,7 +56,7 @@ sqldelight {
 			packageName.set("com.github.basdgrt.sqldelight")
 
 			// Target the postgresql dialect
-			dialect("app.cash.sqldelight:postgresql-dialect:2.1.0")
+			dialect("app.cash.sqldelight:postgresql-dialect:2.2.1")
 
 			// Derive the schema for our database from the .sqm files
 			deriveSchemaFromMigrations.set(true)
